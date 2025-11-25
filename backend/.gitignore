@@ -1,0 +1,53 @@
+# node_modules
+# # Keep environment variables out of version control
+# .env
+
+# /generated/prisma
+
+# Dependencies
+node_modules/
+
+# Env files (sensitive data)
+.env
+.env.*
+!.env.example
+
+# Prisma
+/generated/prisma
+prisma/dev.db
+prisma/dev.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Prisma migrations
+backend/prisma/migrations/
+
+# Build / Coverage
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# ignore ทุกไฟล์ในโฟลเดอร์เหล่านี้ (อิงจาก root)
+#/backend/... = อิงจากรูทโปรเจกต์
+generate/*
+uploads/auditor_upload/*
+uploads/signed_document/*
+uploads/user_upload/*
+
+# allow .gitkeep ภายในแต่ละโฟลเดอร์
+!generate/.gitkeep
+!uploads/auditor_upload/.gitkeep
+!uploads/signed_document/.gitkeep
+!uploads/user_upload/.gitkeep
+
+

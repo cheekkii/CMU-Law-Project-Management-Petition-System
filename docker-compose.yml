@@ -1,0 +1,32 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:456123@db:5432/petition_db
+      JWT_SECRET: 0621e1643128f275fd37d72ef3063a345a6909c4885c2b8fbe4d4f8b1cc30cf2
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: petition_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 456123
+    ports:
+      - "5433:5432"
