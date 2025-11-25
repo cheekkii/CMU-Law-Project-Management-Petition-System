@@ -5,7 +5,7 @@ This system allows staff , track petition status, and manage approval workflows 
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The system provides a centralized platform for petition submission, approval tracking, and project management.  
 It includes user role management, secure data handling, and a structured backend–frontend connection.
@@ -38,18 +38,18 @@ This project was developed by a team, and my main responsibilities included back
 - Wrote and managed Dockerfile & Docker Compose.
 - Helped teammates run the system smoothly using containerization.
 
-### 🧩 Git & Collaboration
+### Git & Collaboration
 - Managed Git branches, merging, pull requests, and conflict resolution.
 - Helped team maintain a clean Git workflow.
 - Assisted teammates with repo connection & setup.
 
-### 🎨 Frontend Support (React)
+### Frontend Support (React)
 - Assisted with integrating frontend pages with backend APIs.
 - Helped debug issues between UI and backend services.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### **Frontend**
 - React.js  
@@ -83,7 +83,7 @@ This project was developed by a team, and my main responsibilities included back
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```sh
 ./build_docker.sh
